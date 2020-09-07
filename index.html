@@ -15,44 +15,47 @@
 <body>
 
     <!--------------------- home ------------------->
-    <div class="slideshow" id="home">
-        <span class="menu-icon" onclick="openMenu()">&#9776;</span>
-        <div class="slideshow-item">
-            <img src="image/carousel/1.jpg" alt="">
-            <div class="slideshow-item-text">
-                <h5>We're Engaged</h5>
-                <h6>TYING KNOT ON DATE <BR> <span>25 NOV 2018</span> </BR></h6>
+    <div>
+        <div class="slideshow" id="home">
+            <span class="menu-icon" onclick="openMenu()">&#9776;</span>
+            <div class="slideshow-item">
+                <img src="image/1.carousel/1.jpg" alt="">
+                <div class="slideshow-item-text">
+                    <h5>We're Engaged</h5>
+                    <h6>TYING KNOT ON DATE <BR> <span>25 NOV 2018</span> </BR></h6>
+                </div>
+            </div>
+
+            <div class="slideshow-item">
+                <img src="image/1.carousel/2.jpg" alt="">
+                <div class="slideshow-item-text">
+                    <h5>We're Engaged</h5>
+                    <h6>TYING KNOT ON DATE <BR><span>25 NOV 2018</span> </BR></h6>
+                </div>
+            </div>
+
+            <div class="slideshow-item">
+                <img src="image/1.carousel/3.jpg" alt="">
+                <div class="slideshow-item-text">
+                    <h5>We're Engaged</h5>
+                    <h6>TYING KNOT ON DATE <BR> <span>25 NOV 2018</span></BR></h6>
+                </div>
             </div>
         </div>
 
-        <div class="slideshow-item">
-            <img src="image/carousel/2.jpg" alt="">
-            <div class="slideshow-item-text">
-                <h5>We're Engaged</h5>
-                <h6>TYING KNOT ON DATE <BR><span>25 NOV 2018</span> </BR></h6>
+        <div class="menu-container" id="navbar">
+            <span class="closebtn" onclick="closeMenu()">&times;</span>
+            <div class="menu-content">
+                <a href="#" onclick="closeMenu()">HOME</a>
+                <a href="#story" onclick="closeMenu()">STORY</a>
+                <a href="#ceremony" onclick="closeMenu()">CEREMONY</a>
+                <a href="#" onclick="closeMenu()">ITENARY</a>
+                <a href="#accomodation" onclick="closeMenu()">ACCOMMODATION</a>
+                <a href="#" onclick="closeMenu()">MEMORIES</a>
+                <a href="#" onclick="closeMenu()">RSVP</a>
             </div>
         </div>
 
-        <div class="slideshow-item">
-            <img src="image/carousel/3.jpg" alt="">
-            <div class="slideshow-item-text">
-                <h5>We're Engaged</h5>
-                <h6>TYING KNOT ON DATE <BR> <span>25 NOV 2018</span></BR></h6>
-            </div>
-        </div>
-    </div>
-
-    <div class="menu-container" id="navbar">
-        <span class="closebtn" onclick="closeMenu()">&times;</span>
-        <div class="menu-content">
-            <a href="#" onclick="closeMenu()">HOME</a>
-            <a href="#story" onclick="closeMenu()">STORY</a>
-            <a href="#" onclick="closeMenu()">CEREMONY</a>
-            <a href="#" onclick="closeMenu()">ITENARY</a>
-            <a href="#" onclick="closeMenu()">ACCOMMODATION</a>
-            <a href="#" onclick="closeMenu()">MEMORIES</a>
-            <a href="#" onclick="closeMenu()">RSVP</a>
-        </div>
     </div>
     <!-------------------- end home --------------------->
 
@@ -79,9 +82,9 @@
                 </div>
                 <div class="round-img">
                     <div class="image-display-1">
-                        <img class="img-1" src="image/story/1.jpg" alt="" />
+                        <img class="img-1" src="image/2.story/1.jpg" alt="" />
                     </div>
-                    <img class="img-2" src="image/story/r-1.png" alt="" />
+                    <img class="img-2" src="image/2.story/r-1.png" alt="" />
                 </div>
                 <div class="right-text">
                     <h1>Bride</h1>
@@ -95,6 +98,59 @@
         </section>
     </div>
     <!-------------------- end story --------------------->
+
+    <!-------------------- countdown ------------------------->
+    <div class="section_ceremony">
+        <section id="ceremony">
+            <div class="ceremony-text">
+                <h1>The Ceremony</h1>
+                <p>DATE: 25th NOV <br>TIME: 11.30 a.m. <br />ADDRESS: XYZ STREET,LONDON,UK</p>
+                <div class="count">
+                    <div class="countdown">
+                        <span id="day">00</span>
+                        DAYS
+                    </div>
+                    <div class="countdown">
+                        <span id="hour">00</span>
+                        HOURS
+                    </div>
+                    <div class="countdown">
+                        <span id="minute">00</span>
+                        MINUTES
+                    </div>
+                    <div class="countdown">
+                        <span id="second">00</span>
+                        SECONDS
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-------------------- end countdown --------------------->
+
+    <!-------------------- accommodation -------------------->
+    <section id="accomodation">
+        <div class="left-acc">
+            <h1>Getting There</h1>
+            <h2>ACCOMMODATION</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley
+            </p>
+            <h2>TRANSPORTATION</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley
+            </p>
+        </div>
+
+        <div class="right-acc">
+            <img class="img-1" src="image/4.accommodation/1.jpg" alt="" />
+        </div>
+    </section>
+    <!--------------------  end accommodation -------------------->
 
 
     <script src="js/app.js" async defer></script>

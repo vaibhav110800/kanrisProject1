@@ -13,11 +13,6 @@ html{
     overflow-x: initial !important;
 }
 
-body{
-    background-color: #000000;
-}
-
-
  /* ----------------home----------------- */
 .slideshow{
     width: 100%;
@@ -25,6 +20,7 @@ body{
     position: relative;
     overflow: hidden;
     /* opacity: .7; */
+    background-color: #000000;
 }
 
 .menu-icon{
@@ -199,7 +195,6 @@ body{
         font-size: 1rem;
     }
 }
-
 
 /*--------------------- story ------------------------*/
 .story_section{
@@ -377,5 +372,184 @@ body{
     .round-img .img-2 {
       width: 350px;
       height: 350px;
+    }
+  }
+
+  /* ------ceremony-timer--------- */
+  
+   #ceremony{
+    margin-top: 0%;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+      url("../image/3.countdown/1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    /* position: absolute;
+      top: 190%; */
+  }
+  .ceremony-text {
+    /* width: 100%; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  .ceremony-text h1 {
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin: 20px;
+    font-family: 'Great Vibes', cursive;
+  }
+  .ceremony-text p {
+    font-size: 1.5rem;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 8px;
+    line-height: 3.5rem;
+  }
+  .count {
+    margin: 40px 0;
+  }
+  .countdown {
+    font-family: "Roboto",sans-serif;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255, 0.3);
+    margin: 0 30px;
+    font-size: 1rem;
+  }
+  .countdown span {
+    font-family: "Roboto",sans-serif;
+    display: block;
+    font-size: 26px;
+    margin: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    #ceremony {
+      margin-top: 10%;
+      height: 120vh;
+      width: 100%;
+    }
+    .ceremony-text h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin: 20px;
+    }
+    .ceremony-text p{
+        font-size: .8rem;
+        line-height: 2rem;
+    }
+    .count {
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .countdown {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(255, 255, 255, 0.3);
+      margin: 5px 30px;
+      font-size: 1rem;
+    }
+  }
+
+  /* ----------------accomodation----------- */
+#accomodation {
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../image/4.accommodation/2.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-acc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  .left-acc h1 {
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 6rem;
+    margin: 5%;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+  }
+  .left-acc h2 {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 7%;
+    font-family: "Montserrat",sans-serif;
+  }
+  .left-acc p {
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .right-acc {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 5%;
+  }
+  .right-acc img {
+    width: 450px;
+    height: 450px;
+    border: 15px white solid;
+    border-bottom: 70px white solid;
+    transform: rotate(9deg);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 15px 10px #777;
+  }
+  
+  @media screen and (max-width: 900px) {
+    #accomodation {
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+    .left-acc {
+        width: 80%;
+    }
+    .left-acc h1 {
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 4rem;
+      margin-top:40px;
+      text-align: center;
+    }
+    .left-acc h2 {
+      letter-spacing: 1.2px;
+      font-size: 1.5rem;
+      margin: 4%;
+    }
+    .left-acc p {
+      font-size: .8rem;
+    }
+    .right-acc {
+      width: 80%;
+      margin: auto;
+      
+    }
+    .right-acc img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      height: 300px;
+      border-bottom: 40px white solid;
     }
   }
