@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@800&family=Roboto:wght@500&family=Great+Vibes&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {outline:0;}
+
+html{
+    
+    overflow-x: initial !important;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+ /* ----------------home----------------- */
+.slideshow{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    /* opacity: .7; */
+}
+
+.menu-icon{
+    position: absolute;
+    color: white;
+    font-size: 60px;
+    
+    left: 42px;
+    top: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu-container{
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.9);
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.menu-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-content a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    font-family: "Roboto",sans-serif;
+    transition: .2s ease-in-out;
+}
+.menu-content a:hover{
+    color: silver;
+}
+
+.menu-container .closebtn{
+    position: absolute;
+    top: 24px;
+    right: 48px;
+    font-size: 80px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slideshow-item{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 31s infinite;
+}
+
+.slideshow-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: zoom 31s infinite;
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+    animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+    animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+    animation-delay: 20s;
+}
+
+.slideshow-item-text{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slideshow-item-text h5{
+    font-size: 7rem;
+    font-family: 'Great Vibes', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 2.5rem;
+}
+
+.slideshow-item-text h6{
+    font-size: 1.6rem;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.slideshow-item-text h6 span{
+    font-size: 1.4rem;
+}
+
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+/* @media screen and (max-width:1000px){
+    .slideshow-item-text{
+        max-width: 70%;
+        
+    }
+} */
+
+@media screen and (max-width:767px){
+    
+    .menu-icon{
+        font-size: 30px;
+        left: 22px;
+        top: 14px;
+        
+    }
+    .menu-container .closebtn{
+        top: 14px;
+        right: 28px;
+        font-size: 40px;
+    }
+
+    .menu-content a{
+        font-size: 18px;
+    }
+
+    .slideshow-item-text h5{
+        font-size: 3rem;
+    }
+
+    .slideshow-item-text h6{
+        font-size: 1.2rem;
+    }
+
+    .slideshow-item-text h6 span{ 
+        font-size: 1rem;
+    }
+}
