@@ -375,6 +375,25 @@ html{
     }
   }
 
+  .iti-but{
+    margin-top: 40px;
+    margin-bottom:25px;
+  }
+
+  .iti-but a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: "Montserrat",sans-serif;
+    color: black;
+    border-bottom: 2px solid black;
+    padding: 15px 15px;
+    transition: transform .2s;
+  }
+
+  .iti-but:hover{
+    transform: scale(1.05);
+  }
+
   /* ------ceremony-timer--------- */
   
    #ceremony{
@@ -384,6 +403,7 @@ html{
       url("../image/3.countdown/1.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     /* position: absolute;
       top: 190%; */
   }
@@ -553,3 +573,303 @@ html{
       border-bottom: 40px white solid;
     }
   }
+
+  /* ---------------memories---------- */
+#memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .memory-text {
+    text-align: center;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+  }
+  .memory-text h1 {
+    font-size: 4rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    margin: 5%;
+    font-family: 'Great Vibes', cursive;
+  }
+  .memory-text p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-family: "Montserrat",sans-serif;
+  }
+  .gallery {
+    text-align: center;
+    margin:auto;
+    width: 80%;
+  }
+  .gallery img {
+    height: 340px;
+    width: 340px;
+    margin: 3px 0;
+  }
+  @media screen and (max-width: 767px) {
+    .memory-text {
+      text-align: center;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin: 10%;
+    }
+    .memory-text h1 {
+      font-size: 3rem;
+      letter-spacing: 1.2px;
+      font-weight: 400;
+      margin: 5%;
+    }
+    .memory-text p {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .gallery {
+        text-align: center;
+        margin:0 10px;
+        width: 100%;
+      }
+
+      .gallery img {
+        height: 150px;
+        width: 150px;
+        margin: 3px 0;
+      }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1300px){
+    .gallery {
+        text-align: center;
+        margin:auto;
+        width: 90%;
+      }
+
+      .gallery img {
+        height: 250px;
+        width: 250px;
+        margin: 3px 0;
+      }
+  }
+
+  /*----------- rsvp------------ */
+  #rsvp {
+    background-color: #F2F3F4 ;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .left-rsvp{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+  }
+  .left-rsvp img {
+    width: 450px;
+    height: 450px;
+    border: 15px white solid;
+    border-bottom: 70px white solid;
+    transform: rotate(9deg);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 15px 10px #777;
+  }
+
+  .right-rsvp {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-rsvp h1 {
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 6rem;
+    margin: 5%;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+  }
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto",sans-serif;
+  }
+
+  .input-fields .input{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: transparent;
+    width: 450px;
+    outline: none;
+  }
+  
+  .no-outline:focus {
+    outline: none;
+  }
+  .right-rsvp h2 {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 7%;
+    font-family: "Montserrat",sans-serif;
+  }
+  .right-rsvp p {
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cbox{
+      font-family: "Roboto",sans-serif;
+  }
+  .cbox_top{
+    display: flex;
+  }
+  .cbox_bottom{
+    display: flex;
+  }
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 2px solid #2196F3;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: transparent;
+    border: 2px solid #2196F3;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  @media screen and (max-width: 767px){
+    .input-fields .input{
+        width: 300px;
+    }
+    .container{
+      font-size: 14px;
+    }
+      
+  }
+
+  @media screen and (max-width: 1000px) {
+    #rsvp {
+      flex-direction: column;
+      /* justify-content: center; */
+    }
+    
+    .left-rsvp {
+      width: 80%;
+      /* margin: auto; */
+      
+    }
+    .left-rsvp img {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      width: 300px;
+      height: 300px;
+      border-bottom: 40px white solid;
+    }
+    .right-rsvp {
+        width: 90%;
+        margin: auto;
+    }
+    .right-rsvp h1 {
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-top:40px;
+      text-align: center;
+    }
+    
+    .right-rsvp h2 {
+      letter-spacing: 1.2px;
+      font-size: 1rem;
+      margin: 4%;
+    }
+    .right-rsvp p {
+      font-size: .8rem;
+    }
+  }
+
+.footer{
+  background-color: #F2F3F4;
+  font-family: "Montserrat",sans-serif;
+  font-size: 15px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}

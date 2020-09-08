@@ -4,8 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>wedding updated</title>
-    <meta name="description" content="">
+    <title>Wedding Invitation</title>
+    <link rel="icon"
+        href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/twitter/259/hibiscus_1f33a.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -49,15 +50,16 @@
                 <a href="#" onclick="closeMenu()">HOME</a>
                 <a href="#story" onclick="closeMenu()">STORY</a>
                 <a href="#ceremony" onclick="closeMenu()">CEREMONY</a>
-                <a href="#" onclick="closeMenu()">ITENARY</a>
+                <a href="itenary.html" onclick="closeMenu()">ITENERARY</a>
                 <a href="#accomodation" onclick="closeMenu()">ACCOMMODATION</a>
-                <a href="#" onclick="closeMenu()">MEMORIES</a>
-                <a href="#" onclick="closeMenu()">RSVP</a>
+                <a href="#memory" onclick="closeMenu()">MEMORIES</a>
+                <a href="#rsvp" onclick="closeMenu()">RSVP</a>
             </div>
         </div>
 
     </div>
     <!-------------------- end home --------------------->
+
 
     <!-------------------- story ------------------------->
     <div class="story_section">
@@ -95,9 +97,14 @@
                     </p>
                 </div>
             </div>
+
+            <div class="iti-but">
+                <a href="itenary.html">ITENERARY &#8594;</a>
+            </div>
         </section>
     </div>
     <!-------------------- end story --------------------->
+
 
     <!-------------------- countdown ------------------------->
     <div class="section_ceremony">
@@ -128,6 +135,7 @@
     </div>
     <!-------------------- end countdown --------------------->
 
+
     <!-------------------- accommodation -------------------->
     <section id="accomodation">
         <div class="left-acc">
@@ -152,6 +160,87 @@
     </section>
     <!--------------------  end accommodation -------------------->
 
+
+    <!--------------------  memories -------------------->
+    <section id="memory">
+        <div class="memory-text">
+            <h1>Best Memories</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                since the 1500s, when an unknown printer took a galley
+            </p>
+        </div>
+        <div class="gallery">
+            <a href="image/5.memory/1.jpg" data-lightbox="mygallery"><img src="image/5.memory/1.jpg" alt="" /></a>
+            <a href="image/5.memory/2.jpg" data-lightbox="mygallery"><img src="image/5.memory/2.jpg" alt="" /></a>
+            <a href="image/5.memory/3.jpg" data-lightbox="mygallery"><img src="image/5.memory/3.jpg" alt="" /></a>
+            <a href="image/5.memory/4.jpg" data-lightbox="mygallery"><img src="image/5.memory/4.jpg" alt="" /></a>
+            <a href="image/5.memory/5.jpg" data-lightbox="mygallery"><img src="image/5.memory/5.jpg" alt="" /></a>
+            <a href="image/5.memory/6.jpg" data-lightbox="mygallery"><img src="image/5.memory/6.jpg" alt="" /></a>
+            <a href="image/5.memory/7.jpg" data-lightbox="mygallery"><img src="image/5.memory/7.jpg" alt="" /></a>
+            <a href="image/5.memory/8.jpg" data-lightbox="mygallery"><img src="image/5.memory/8.jpg" alt="" /></a>
+        </div>
+    </section>
+    <!--------------------  end memories -------------------->
+
+
+    <!--------------------  rsvp -------------------->
+    <section id="rsvp">
+        <div class="left-rsvp">
+            <img class="img-1" src="image/6.rsvp/2.jpg" alt="" />
+        </div>
+
+        <div class="right-rsvp">
+            <h1>Will You Attend?</h1>
+
+            <form class="input-fields">
+                <input type="name" class="input" placeholder="Name" /> <br>
+                <input type="email" class="input" placeholder="Email Address" /><br>
+                <input type="text" class="input" placeholder="Number Of Guests" /><br>
+                <textarea name="message" id="" class="input" cols="30" rows="5" style="resize: none;"
+                    placeholder="Message"></textarea><br>
+            </form>
+
+            <h2>What will you be attending?</h2>
+
+            <div class="cbox">
+                <div class="cbox_top">
+                    <label class="container">Wedding
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Haldi
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Mehendi
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="cbox_bottom">
+                    <label class="container">Sangeet
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Reception
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">All
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------  end rsvp -------------------->
+
+    <div class="footer">
+        copryright © Vaibhav Thakur 2020
+    </div>
 
     <script src="js/app.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
