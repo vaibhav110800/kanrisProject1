@@ -195,11 +195,11 @@
             <h1>Will You Attend?</h1>
 
             <form class="input-fields">
-                <input type="name" class="input" placeholder="Name" /> <br>
-                <input type="email" class="input" placeholder="Email Address" /><br>
-                <input type="text" class="input" placeholder="Number Of Guests" /><br>
+                <input type="name" class="input" placeholder="Name" required/> <br>
+                <input type="email" class="input" placeholder="Email Address" required /><br>
+                <input type="text" class="input" placeholder="Number Of Guests" required /><br>
                 <textarea name="message" id="" class="input" cols="30" rows="5" style="resize: none;"
-                    placeholder="Message"></textarea><br>
+                    placeholder="Message" required></textarea><br>
 
 
                 <h2>What will you be attending?</h2>
